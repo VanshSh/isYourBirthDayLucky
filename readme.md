@@ -24,3 +24,7 @@
 - CSS
 - HTML
 - Netlify (Hosting)
+
+---
+## Check it out here
+- [is Your Birthday Lucky](https://isyourbirthdayluckybyvanshsharma.netlify.app/)
