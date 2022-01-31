@@ -13,7 +13,7 @@ This simple web app takes the user DOB and Luy number(sum of all the digits of D
 ## Technologies
 
 - HTML
-- Bootstarap
+- Bootstrap
 - JavaSCript
 - Hosted (Netlify)
 

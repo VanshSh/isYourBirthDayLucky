@@ -12,8 +12,8 @@ submitBtn.addEventListener('click', () => {
   for (value of dateValue) {
     sumOfDate += Number(value)
   }
-  
-  if (dateValue === '' || luckyNumber === '') {
+
+  if (dateValue === '' || luckyNumber === '' || luckyNumber < 1) {
     valid.classList.add('d-block')
   } else if (sumOfDate % luckyNumber === 0) {
     happy.classList.add('d-block')
