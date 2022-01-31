@@ -1,30 +1,23 @@
-const form = document.getElementById("form");
+const date = document.getElementById('date')
+const inputNumber = document.getElementById('inputNumber')
+const happy = document.getElementById('happy')
+const sad = document.getElementById('sad')
+const valid = document.getElementById('valid')
+const submitBtn = document.getElementById('submitBtn')
 
-const date = document.getElementById("date");
-
-const lucky = document.getElementById("luckyNo");
-
-const happy = document.querySelector(".happyoutput");
-const sad = document.querySelector(".sadoutput");
-const formDetails = document.querySelector(".enter-details");
-
-
-
-form.addEventListener("submit", (e) => {
-  e.preventDefault();
-  const dateValue = date.value.split("-").join("");
-
-  let sum = 0;
-  for (digit of dateValue) {
-    sum += Number(digit);
+submitBtn.addEventListener('click', () => {
+  let luckyNumber = Number(inputNumber.value)
+  let dateValue = date.value.split('-').join('')
+  let sumOfDate = 0
+  for (value of dateValue) {
+    sumOfDate += Number(value)
   }
-  const luckyNumber = Number(lucky.value);
-
-  if (sum % luckyNumber === 0) {
-    formDetails.style.display = "none";
-    happy.style.display = "block";
+  
+  if (dateValue === '' || luckyNumber === '') {
+    valid.classList.add('d-block')
+  } else if (sumOfDate % luckyNumber === 0) {
+    happy.classList.add('d-block')
   } else {
-    formDetails.style.display = "none";
-    sad.style.display = "block";
+    sad.classList.add('d-block')
   }
-});
+})

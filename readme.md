@@ -1,35 +1,25 @@
-# is Your Birthday Lucky ?
+# isYourBirthdayLucky
 
-## NOTE: Every Birthdate is Lucky.
+This simple web app takes the user DOB and Luy number(sum of all the digits of DOB) and gives the different output on the basis of number.
 
----
-
-## About:
-
-### This web apps tells you **_is your Birthday Lucky_**. This is just a fun game. Need not to be taken seriously.
-
-
-
+## [LIVE](https://isyourbirthdayluckybyvanshsharma.netlify.app/)
 
 ---
 
-## How
-
-- Enter you Date of Birth.
-- Enter you Lucky Number (Sum of your DOB).
-- Submit
+![Demo](./images/isYourBirthdayLucky.png)
 
 ---
 
 ## Technologies
 
-- JavaScript
-- CSS
 - HTML
-- Netlify (Hosting)
+- Bootstarap
+- JavaSCript
+- Hosted (Netlify)
 
 ---
-## Check it out here
-- [is Your Birthday Lucky](https://isyourbirthdayluckybyvanshsharma.netlify.app/)
 
-https://user-images.githubusercontent.com/81517284/126809304-472e8aa3-3fe3-4187-a826-af4bbbb8feab.mp4
+Contact :
+
+- [Twitter](https://twitter.com/Vanshsh2701)
+- [Linkedin](https://www.linkedin.com/in/vanshsharma27/)

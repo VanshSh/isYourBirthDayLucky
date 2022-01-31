@@ -1,123 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=h1, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <!-- Latest compiled and minified CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
 
-<head>
-   <meta charset="UTF-8">
-   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-   <meta name="viewport" content="width=h1, initial-scale=1.0">
-   <title>Lucky Birthday ?</title>
-   <link rel="stylesheet" href="./style.css">
-</head>
+    <script defer src="./app.js"></script>
 
-<body>
+    <title>is Your Lucky Birthday ?</title>
+  </head>
 
+  <body>
+    <header class="container-fluid text-center bg-success">
+      <h1 class="text-warning">
+        is Your Birthday Lucky!
+        <img
+          src="https://img.icons8.com/dusk/64/000000/birthday-cake--v1.png"
+        />
+      </h1>
+    </header>
 
-   </div>
+    <section class="d-flex mb-5 justify-content-center">
+      <a
+        href="https://github.com/VanshSh/isYourBirthDayLucky"
+        class="btn btn-warning mx-5 p-2 text-primary fs-5"
+        >GitHub Code</a
+      >
+      <a href="#" class="btn btn-warning mx-5 p-2 text-primary fs-5"
+        >Portfolio</a
+      >
+    </section>
 
+    <div
+      class="container fs-5 mt-3 text-center alert alert-danger alert-dismissible"
+    >
+      <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+      <strong>Info!</strong> We are Strongly against storing DATA.
+    </div>
 
-   <!-- Header -->
-   <header>
+    <main
+      class="d-flex flex-column p-3 rounded justify-content-center align-items-center container bg-secondary"
+    >
+      <h3>Date of Birth:</h3>
+      <input
+        class="w-50 text-center rounded border-0 p-2 fs-5 mb-2"
+        type="date"
+        id="date"
+      />
+      <h3>Lucky Number</h3>
+      <input
+        class="w-50 rounded border-0 text-center fs-5 p-2 mb-3"
+        placeholder="Enter your Lucky number"
+        type="number"
+        id="inputNumber"
+      />
 
-      <h1>is Your Birthday Lucky! <img src="https://img.icons8.com/dusk/64/000000/birthday-cake--v1.png" /></h1>
+      <button id="submitBtn" type="button" class="btn fs-5 btn-info w-50">
+        Submit
+      </button>
+    </main>
 
-   </header>
+    <div id="happy" class="happyResult">
+      <h2>Hurray :)</h2>
+      <p>🎈 Your Birthdate is Lucky 🎉</p>
+    </div>
 
-   <!-- Privacy Notice -->
-   <section class="privacy">
+    <div id="sad" class="sadResult">
+      <h2>Sad :(</h2>
+      <p>😥 This is not Lucky number! 😥</p>
+    </div>
 
-      <h2>We are STRONGLY against storing DATA!</h2>
-
-   </section>
-
-   <!-- Lucky output -->
-   <div class="happyoutput ">
-      <h2>
-         <h2>Hurray!</h2>
-         <p>Your Birthdate is Lucky.</p>
-         <img src="https://img.icons8.com/officel/48/000000/birthday-cake--v2.png" />
-         <img src="https://img.icons8.com/color/48/000000/gift--v2.png" />
-      </h2>
-   </div>
-
-   <!-- sadoutput -->
-   <div class="sadoutput">
-      <h2>Sorry!</h2>
-      <img src="https://img.icons8.com/bubbles/50/000000/sad.png" />
-      <h5>NOTE: Every Birthdate is LUCkY</h5>
-
-   </div>
-
-
-   <!-- Enter Details -->
-   <section class="enter-details">
-
-      <h2>Enter your Birthdate and Lucky Number </h2>
-
-      <form id="form">
-
-         <label for="date" class="label">
-            <h2>Select Your Birthdate:</h2>
-         </label>
-
-         <input class="date" type="date" id="date" required />
-
-
-
-         <label for="luckyNo" class="lucky">
-            <h2> Enter Your Lucky Number:</h2>
-         </label>
-
-         <input type="number" id="luckyNo" min="1" required />
-
-         <br>
-
-         <button type="submit">Submit</button>
-
-      </form>
-
-
-
-   </section>
-
-
-   <!-- Footer -->
-   <footer>
-      <ul>
-         <li class="social-media">
-
-            <a href="https://twitter.com/Vanshsh2701" target="_blank"><img
-                  src="https://img.icons8.com/plasticine/40/000000/twitter--v1.png" /></a>
-
-         </li>
-
-         <li class="social-media">
-
-            <a href="https://www.linkedin.com/in/vanshsharma27/" target="_blank"><img
-                  src="https://img.icons8.com/plasticine/40/000000/linkedin.png" /></a>
-
-         </li>
-
-         <li class="social-media">
-
-            <a href="https://github.com/VanshSh" target="_blank"><img
-                  src="https://img.icons8.com/plasticine/40/000000/github.png" /></a>
-
-         </li>
-
-         <li class="social-media">
-
-            <a href="https://vanshsharma.netlify.app/" target="_blank"><img
-                  src="https://img.icons8.com/plasticine/40/000000/resume.png" /></a>
-
-         </li>
-
-      </ul>
-   </footer>
-
-
-   <script src="./app.js"></script>
-
-
-</body>
-
+    <div id="valid" class="notValid">
+      <p>Please write valid inputs!</p>
+    </div>
+  </body>
 </html>
